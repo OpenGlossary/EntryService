@@ -5,7 +5,7 @@
         /// <summary>
         /// Inserts data into the cache, with an optional expiration time
         /// </summary>
-        void InsertAsync(string key, T value, TimeSpan? expiration = null);
+        void InsertAsync<T>(string key, T value, TimeSpan? expiration = null);
         
         T GetAsync<T>(string key);
 

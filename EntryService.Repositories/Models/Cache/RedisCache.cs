@@ -1,9 +1,8 @@
-﻿
-namespace EntryService.Repositories.Models.Cache
+﻿namespace EntryService.Repositories.Models.Cache
 {
     public class RedisCache : ICache
     {
-        public void InsertAsync(string key, T value, TimeSpan? expiration = null)
+        public void InsertAsync<T>(string key, T value, TimeSpan? expiration = null)
         {
             throw new NotImplementedException();
         }
